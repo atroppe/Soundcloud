@@ -1,0 +1,153 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .6s ease;
+}
+/**--------- GRIDS ------------**/
+
+.grid {
+    font-size: 0px;
+    text-align: justify;
+}
+/*the following is needed for justify to work*/
+
+.grid:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.cell {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+    font-size: 1rem;
+}
+/**--------- GRIDS ------------**/
+
+.grid {
+    padding: 50px;
+    background-image: url(http://cl.ly/image/3y450a2r0B24/Crystal%20Background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 680px;
+    background-color: #FFDBCB;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    border: solid 8px #4A446A;
+    overflow: auto;
+}
+.main {
+    width: 680px;
+    height: 500px;
+    position: relative;
+}
+.info {
+    width: 680px;
+    height: 150px;
+    background-color: #C0C9D8;
+    font-size: 0;
+}
+.general {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+.general p {
+    color: #4A446A;
+    padding: 10px;
+    font-size: 2rem;
+    line-height: .5rem;
+}
+.followers {
+    margin-left: 32px;
+    margin-right: 7px;
+}
+.followers, .likes {
+    width: 22%;
+    height: 100%;
+    background-color: #7E8EBF;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.followers p, .likes p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.numberFollow, .numberLikes {
+    color: #FFE4CF;
+    font-size: 5rem;
+    text-align: center;
+}
+button {
+    width: 140px;
+    height: 40px;
+    background-color: #7E8EBF;
+    border: 4px solid #4A446A;
+    border-radius: 5px;
+    left: 20px;
+    position: absolute;
+    bottom: 80px;
+}
+button p {
+    color: #4A446A;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+.name {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    color: #4A446A;
+    font-size: 2rem;
+}
+/*.email{
+  position: absolute;
+  bottom: 40px;
+  right: 20px; 
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}*/
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid black;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+}
+#triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid black;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+}
